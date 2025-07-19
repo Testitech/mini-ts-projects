@@ -23,7 +23,9 @@
     "declaration": true // Recommended for libraries: generates .d.ts declaration files
   },
   "include": [
-    "src/**/*" // Include all files within the 'src' directory for compilation
+    "src/**/*", // Include all files within the 'src' directory for compilation
+    "dist/employeeSystem.js",
+    "dist/employeeSystem.js"
   ],
   "exclude": [
     "node_modules", // Exclude node_modules from compilation
