@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2018", // Modern JavaScript target for emitted code
+    "lib": ["es2018", "dom"], // Include ES features and DOM types (essential for browser projects like React)
+    "jsx": "react-jsx", // IMPORTANT: If you are using React JSX. Use "react" for older React versions.
+
+    /* Modules */
+    "module": "commonjs", // CommonJS for Node.js environments. For browser bundling, "esnext" or "es2020" might be used.
+    "rootDir": "./src", // Specifies the root directory of your source files
+    "outDir": "./dist", // THIS IS THE KEY: Output compiled files to the 'dist' directory
+
+    /* Type Checking */
+    "strict": true, // Enable all strict type-checking options (highly recommended)
+
+    /* Interop Constraints */
+    "esModuleInterop": true, // Helps with importing CommonJS modules into ES Module syntax
+    "forceConsistentCasingInFileNames": true, // Enforces consistent casing in file imports
+
+    /* Completeness */
+    "skipLibCheck": true, // Faster compilation by skipping type checking of declaration files
+    "sourceMap": true, // Recommended for debugging: generates source map files alongside JS
+    "declaration": true // Recommended for libraries: generates .d.ts declaration files
+  },
+  "include": [
+    "src/**/*" // Include all files within the 'src' directory for compilation
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules from compilation
+    "dist" // Exclude the output directory itself to prevent circular compilation
+  ]
+}
